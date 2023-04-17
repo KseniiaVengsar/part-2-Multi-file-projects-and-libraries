@@ -1,30 +1,23 @@
-// 2. Class.cpp : This file contains the 'main' function. Program execution begins and ends there.
-//
-#include "Header.h"
-#include <iostream>
-#include <cstdlib>
-#include <string>
-
 int main() {
     setlocale(LC_ALL, "RU");
     Counter number;
     Counter number2;
-    //присваивание значений полям
-    std::cout << "Вы хотите указать начальное значение счётчика?" << "\n" << "Введите yes или no:" << std::endl;
+    //РїСЂРёСЃРІР°РёРІР°РЅРёРµ Р·РЅР°С‡РµРЅРёР№ РїРѕР»СЏРј
+    std::cout << "Р’С‹ С…РѕС‚РёС‚Рµ СѓРєР°Р·Р°С‚СЊ РЅР°С‡Р°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‡С‘С‚С‡РёРєР°?" << "\n" << "Р’РІРµРґРёС‚Рµ yes РёР»Рё no:" << std::endl;
     std::string yes_no;
     std::cin >> yes_no;
     if (yes_no == "yes") {
-        std::cout << "Введите начальное значение счётчика:" << std::endl;
+        std::cout << "Р’РІРµРґРёС‚Рµ РЅР°С‡Р°Р»СЊРЅРѕРµ Р·РЅР°С‡РµРЅРёРµ СЃС‡С‘С‚С‡РёРєР°:" << std::endl;
         int m;
         std::cin >> m;
-        number = Counter(m); //создание объекта
+        number = Counter(m); //СЃРѕР·РґР°РЅРёРµ РѕР±СЉРµРєС‚Р°
 
-       std::cout << "Введите команду ('+', '-', '=' или 'x'):";
+       std::cout << "Р’РІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ ('+', '-', '=' РёР»Рё 'x'):";
         std::string command_2;
        std::cin >> command_2;
         while (command_2 != "x")
         {
-            std::cout << "Введите команду ('+', '-', '=' или 'x'):";
+            std::cout << "Р’РІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ ('+', '-', '=' РёР»Рё 'x'):";
             std::cin >> command_2;
             if (command_2 == "+")
             {
@@ -40,7 +33,7 @@ int main() {
             }
 
             else if (command_2 == "x") {
-                std::cout << "До свидания!" << std::endl;
+                std::cout << "Р”Рѕ СЃРІРёРґР°РЅРёСЏ!" << std::endl;
                 break;
             }
 
@@ -51,11 +44,11 @@ int main() {
 
     if (yes_no == "no") {
         number2 = Counter();
-        std::cout << "Введите команду ('+', '-', '=' или 'x'):";
+        std::cout << "Р’РІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ ('+', '-', '=' РёР»Рё 'x'):";
         std::string command_5;
         std::cin >> command_5;
         while (command_5 != "x") {
-            std::cout << "Введите команду ('+', '-', '=' или 'x'):";
+            std::cout << "Р’РІРµРґРёС‚Рµ РєРѕРјР°РЅРґСѓ ('+', '-', '=' РёР»Рё 'x'):";
             std::cin >> command_5;
             if (command_5 == "+")
             {
@@ -70,7 +63,7 @@ int main() {
                 std::cout << number.present_value() << std::endl;
             }
             else if (command_5 == "x") {
-                std::cout << "До свидания!" << std::endl;
+                std::cout << "Р”Рѕ СЃРІРёРґР°РЅРёСЏ!" << std::endl;
                 break;
             }
 
