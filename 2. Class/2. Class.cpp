@@ -1,3 +1,8 @@
+#include "Header.h"
+#include <iostream>
+#include <cstdlib>
+#include <string>
+
 int main() {
     setlocale(LC_ALL, "RU");
     Counter number;
